@@ -7,6 +7,8 @@ import { Platform, BackAndroid, Navigator, StyleSheet, View } from 'react-native
 import { connect } from 'react-redux';
 
 import MainScreen from './containers/Main';
+import Second from './containers/Second';
+import Last from './containers/Last';
 
 import {Actions, Scene, Router, ActionConst} from 'react-native-router-flux';
 
@@ -14,6 +16,8 @@ import {Actions, Scene, Router, ActionConst} from 'react-native-router-flux';
 const scenes = Actions.create(
     <Scene key="root" hideNavBar={true}>
         <Scene key="main" component={MainScreen} initial={true}/>
+        <Scene key="second_screen" component={Second} />
+        <Scene key="last_screen" component={Last} />
 
     </Scene>
 );
